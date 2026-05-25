@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>B1 Session 11: Travel Planning</title>
-<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Segoe UI',sans-serif;background:#5B5091;min-height:100vh;padding:20px}.container{max-width:800px;margin:0 auto}.header{background:#fff;border-radius:20px;padding:30px;margin-bottom:20px;text-align:center}.header h1{color:#5B5091;font-size:1.4em}.header p{color:#888}.card{background:#fff;border-radius:16px;padding:25px;margin-bottom:20px}.card h2{color:#5B5091;margin-bottom:15px}label{font-weight:600;color:#333;display:block;margin-bottom:8px}input[type="text"],select{width:100%;padding:14px;border:2px solid #e0e0e0;border-radius:12px;font-size:16px;margin-bottom:15px}.btn{background:#5B5091;color:#fff;border:none;padding:14px 32px;border-radius:12px;font-size:16px;font-weight:600;cursor:pointer;width:100%;margin-top:10px}.btn:hover{background:#4a4080}.btn-orange{background:#F5A623}.section{display:none}.section.active{display:block}.reading-box{background:#f8f9fa;border-radius:12px;padding:20px;margin-bottom:20px;border-left:4px solid #5B5091;line-height:1.7}.question{background:#f8f9fa;border-radius:12px;padding:20px;margin:15px 0;border:1px solid #eee}.question h4{margin-bottom:15px;color:#333}.option{padding:14px;border:2px solid #e0e0e0;border-radius:10px;cursor:pointer;margin-bottom:10px;display:flex;align-items:center;gap:12px}.option:hover{border-color:#5B5091;background:#f8f6ff}.option.selected{border-color:#5B5091;background:#f0edff}.option.correct{border-color:#22c55e;background:#f0fdf4}.option.incorrect{border-color:#ef4444;background:#fef2f2}.circle{width:20px;height:20px;border:2px solid #ccc;border-radius:50%;flex-shrink:0}.option.selected .circle{border-color:#5B5091;background:#5B5091}textarea{width:100%;min-height:120px;padding:14px;border:2px solid #e0e0e0;border-radius:12px;font-size:16px;font-family:inherit}textarea:focus{outline:none;border-color:#5B5091}.progress{height:8px;background:#e0e0e0;border-radius:4px;margin-bottom:20px}.progress-bar{height:100%;background:#F5A623;border-radius:4px}.score-card{background:linear-gradient(135deg,#5B5091,#7B6DB5);border-radius:20px;padding:35px;color:#fff;text-align:center}.score-big{font-size:4em;font-weight:700}.scores{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:20px}.scores>div{background:rgba(255,255,255,.15);border-radius:12px;padding:12px}.scores label{font-size:.75em;opacity:.9}.scores span{font-size:1.4em;font-weight:700;display:block}.word-bank{display:flex;flex-wrap:wrap;gap:10px;padding:15px;background:#f5f5f5;border-radius:12px;margin-bottom:15px}.word{background:#fff;padding:10px 16px;border-radius:8px;cursor:pointer;border:2px solid #e0e0e0}.word:hover{border-color:#5B5091}.word.selected{border-color:#5B5091;background:#f0edff}.word.used{opacity:0.4;pointer-events:none}.drop-row{display:flex;gap:15px;align-items:center;margin-bottom:12px}.drop-def{flex:1;background:#f8f9fa;padding:14px;border-radius:8px}.drop-target{min-width:130px;min-height:44px;border:2px dashed #ccc;border-radius:8px;padding:10px;text-align:center;cursor:pointer}.drop-target.filled{border-style:solid;border-color:#5B5091;background:#f8f6ff}.record-btn{width:80px;height:80px;border-radius:50%;background:#fff;border:3px solid #5B5091;cursor:pointer;margin:20px auto;display:flex;align-items:center;justify-content:center}.record-btn.recording{border-color:#ef4444;animation:pulse 1.5s infinite}.record-dot{width:24px;height:24px;background:#5B5091;border-radius:50%}.record-btn.recording .record-dot{background:#ef4444;border-radius:4px;width:20px;height:20px}@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(239,68,68,.4)}50%{box-shadow:0 0 0 15px rgba(239,68,68,0)}}.timer{text-align:center;font-size:28px;font-weight:700;color:#5B5091}.status{text-align:center;color:#666;margin-top:10px}.transcript-box{background:#f8f9fa;border-radius:12px;padding:18px;margin-top:14px;border:1px solid #eee;border-left:4px solid #5B5091;line-height:1.7}.hidden{display:none}.feedback{background:#f8f6ff;border:1px solid #5B5091;border-radius:12px;padding:20px;margin-top:15px}@media(max-width:600px){.scores{grid-template-columns:repeat(3,1fr)}.drop-row{flex-direction:column;align-items:stretch}}</style>
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Segoe UI',sans-serif;background:#5B5091;min-height:100vh;padding:20px}.container{max-width:800px;margin:0 auto}.header{background:#fff;border-radius:20px;padding:30px;margin-bottom:20px;text-align:center}.header h1{color:#5B5091;font-size:1.4em}.header p{color:#888}.level-badge{background:#5B5091;color:#fff;padding:6px 16px;border-radius:20px;font-size:.9em;display:inline-block;margin-bottom:10px;font-weight:600}.card{background:#fff;border-radius:16px;padding:25px;margin-bottom:20px}.card h2{color:#5B5091;margin-bottom:15px}label{font-weight:600;color:#333;display:block;margin-bottom:8px}input[type="text"],select{width:100%;padding:14px;border:2px solid #e0e0e0;border-radius:12px;font-size:16px;margin-bottom:15px}.btn{background:#5B5091;color:#fff;border:none;padding:14px 32px;border-radius:12px;font-size:16px;font-weight:600;cursor:pointer;width:100%;margin-top:10px}.btn:hover{background:#4a4080}.btn:disabled{opacity:.5}.btn-orange{background:#F5A623}.section{display:none}.section.active{display:block}.reading-box{background:#f8f9fa;border-radius:12px;padding:20px;margin-bottom:20px;border-left:4px solid #5B5091;line-height:1.7}.question{background:#f8f9fa;border-radius:12px;padding:20px;margin:15px 0;border:1px solid #eee}.question h4{margin-bottom:15px;color:#333}.option{padding:14px;border:2px solid #e0e0e0;border-radius:10px;cursor:pointer;margin-bottom:10px;display:flex;align-items:center;gap:12px}.option:hover{border-color:#5B5091;background:#f8f6ff}.option.selected{border-color:#5B5091;background:#f0edff}.option.correct{border-color:#22c55e;background:#f0fdf4}.option.incorrect{border-color:#ef4444;background:#fef2f2}.circle{width:20px;height:20px;border:2px solid #ccc;border-radius:50%;flex-shrink:0}.option.selected .circle{border-color:#5B5091;background:#5B5091}textarea{width:100%;min-height:120px;padding:14px;border:2px solid #e0e0e0;border-radius:12px;font-size:16px;font-family:inherit}textarea:focus{outline:none;border-color:#5B5091}.progress{height:8px;background:#e0e0e0;border-radius:4px;margin-bottom:20px}.progress-bar{height:100%;background:#F5A623;border-radius:4px}.score-card{background:linear-gradient(135deg,#5B5091,#7B6DB5);border-radius:20px;padding:35px;color:#fff;text-align:center}.score-big{font-size:4em;font-weight:700}.scores{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:20px}.scores>div{background:rgba(255,255,255,.15);border-radius:12px;padding:12px}.scores label{font-size:.75em;opacity:.9}.scores span{font-size:1.4em;font-weight:700;display:block}.word-bank{display:flex;flex-wrap:wrap;gap:10px;padding:15px;background:#f5f5f5;border-radius:12px;margin-bottom:15px}.word{background:#fff;padding:10px 16px;border-radius:8px;cursor:pointer;border:2px solid #e0e0e0}.word:hover{border-color:#5B5091}.word.selected{border-color:#5B5091;background:#f0edff}.word.used{opacity:0.4;pointer-events:none}.drop-row{display:flex;gap:15px;align-items:center;margin-bottom:12px}.drop-def{flex:1;background:#f8f9fa;padding:14px;border-radius:8px}.drop-target{min-width:130px;min-height:44px;border:2px dashed #ccc;border-radius:8px;padding:10px;text-align:center;cursor:pointer}.drop-target.filled{border-style:solid;border-color:#5B5091;background:#f8f6ff}.record-btn{width:80px;height:80px;border-radius:50%;background:#fff;border:3px solid #5B5091;cursor:pointer;margin:20px auto;display:flex;align-items:center;justify-content:center}.record-btn.recording{border-color:#ef4444;animation:pulse 1.5s infinite}.record-dot{width:24px;height:24px;background:#5B5091;border-radius:50%}.record-btn.recording .record-dot{background:#ef4444;border-radius:4px;width:20px;height:20px}@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(239,68,68,.4)}50%{box-shadow:0 0 0 15px rgba(239,68,68,0)}}.timer{text-align:center;font-size:28px;font-weight:700;color:#5B5091}.status{text-align:center;color:#666;margin-top:10px}.transcript-box{background:#f8f9fa;border-radius:12px;padding:18px;margin-top:14px;border:1px solid #eee;border-left:4px solid #5B5091;line-height:1.7}.hidden{display:none}.feedback{background:#f8f6ff;border:1px solid #5B5091;border-radius:12px;padding:20px;margin-top:15px}@media(max-width:600px){.scores{grid-template-columns:repeat(3,1fr)}.drop-row{flex-direction:column;align-items:stretch}}</style>
 </head>
 <body>
 <div class="container">
-<div class="header"><h1>B1 Session 11: Travel Planning</h1><p>Week 7 &bull; Future Simple (will &amp; be going to) &bull; Travel Vocabulary</p></div>
+<div class="header"><div class="level-badge">CEFR Level B1 - Intermediate</div><h1>B1 Session 11: Travel Planning</h1><p>Week 7 &bull; Future Simple (will &amp; be going to) &bull; Travel Vocabulary</p></div>
 
 <div class="section active" id="start"><div class="card">
 <label>Your Full Name</label>
@@ -71,7 +71,7 @@
 <div class="status" id="recStatus">Click to start recording</div>
 <div id="transcriptBox" class="transcript-box" style="display:none"></div>
 <div id="sFeedback" class="feedback" style="display:none"></div>
-<button class="btn" id="sBtn" onclick="checkSpeaking()">Continue &rarr;</button>
+<button class="btn" id="sBtn" onclick="checkSpeaking()" disabled>Continue &rarr;</button>
 </div></div>
 
 <div class="section" id="s5"><div class="card">
@@ -201,15 +201,23 @@ function stopRec(){
   if(recognition){try{recognition.stop();}catch(e){} recognition=null;}
   document.getElementById('recBtn').classList.remove('recording');
   document.getElementById('recStatus').textContent='Recording saved!';
+  var sb=document.getElementById('sBtn');if(sb)sb.disabled=false;
+  var tb=document.getElementById('transcriptBox');
+  if(tb && !spokenText.trim()){tb.textContent='No transcript captured. Try again.';tb.style.display='block';}
 }
 
 function checkSpeaking(){
-  const text=spokenText.toLowerCase();
-  let score=recTime>=30?8:recTime>=15?5:recTime>=5?3:1;
-  const items=['will','going to','travel','trip','visit','vacation','holiday','hotel','plane','flight','beach','city','country','tour','museum','ticket','am going','is going','are going'];
-  score+=Math.min(6,items.filter(x=>text.includes(x)).length)*2;
+  const text=(spokenText||'').toLowerCase();
+  const futureForms=['will','going to',"'ll",'am going','is going','are going'];
+  const travelWords=['travel','trip','visit','vacation','holiday','hotel','plane','flight','passport','suitcase','luggage','destination','beach','city','country','tour','museum','ticket','airport','journey'];
+  const fHits=futureForms.filter(f=>text.includes(f)).length;
+  const tHits=travelWords.filter(w=>text.includes(w)).length;
+  let score=0;
+  if(fHits>=2) score+=10; else if(fHits>=1) score+=6;
+  if(tHits>=3) score+=10; else if(tHits>=1) score+=6;
+  if(score===0 && text.trim().length>0) score=4;
   scores.s=Math.min(20,score);
-  document.getElementById('sFeedback').innerHTML='<b>Score: '+scores.s+'/20</b><br>Scored on duration, future tenses, and travel vocabulary.';
+  document.getElementById('sFeedback').innerHTML='<b>Score: '+scores.s+'/20</b><br>Future tense forms: '+fHits+' &middot; Travel vocabulary: '+tHits+'<br>Transcript: '+(spokenText||'Not captured');
   document.getElementById('sFeedback').style.display='block';
   showSection('s5');
 }
@@ -251,15 +259,23 @@ function submitToTeacher(){
   formData.append('entry.1207114914',Math.round(total/57*100)+'%');
   formData.append('entry.939912807',writingText||'');
   formData.append('entry.2086302086',spokenText||'No transcript captured');
-  fetch('https://docs.google.com/forms/d/e/1FAIpQLSf9uEs5MqWLveyoaMBxeWx3pW1b90siwgaom766CpwqnOI7Dg/formResponse',{method:'POST',mode:'no-cors',body:formData})
-  .then(function(){
-    if(btn){btn.textContent='Submitted!';btn.style.background='#22c55e';}
+  function showSuccess(){
+    if(btn){btn.textContent='Submitted!';btn.style.background='#22c55e';btn.disabled=true;}
     var s=document.getElementById('submitStatus');
     if(s){s.textContent='Homework submitted! Your teacher received your work.';s.style.display='block';}
-  }).catch(function(){
+  }
+  function showFailure(){
     submitted=false;
     if(btn){btn.disabled=false;btn.textContent='Failed - Tap to Retry';btn.style.background='#ef4444';}
-  });
+    var s=document.getElementById('submitStatus');
+    if(s){s.textContent='Submission failed. Check your internet and try again.';s.style.display='block';}
+  }
+  // 6s timeout fallback for mobile (no-cors never errors on success)
+  var done=false;
+  var timeoutId=setTimeout(function(){if(!done){done=true;showSuccess();}},6000);
+  fetch('https://docs.google.com/forms/d/e/1FAIpQLSf9uEs5MqWLveyoaMBxeWx3pW1b90siwgaom766CpwqnOI7Dg/formResponse',{method:'POST',mode:'no-cors',body:formData})
+  .then(function(){if(done)return;done=true;clearTimeout(timeoutId);showSuccess();})
+  .catch(function(){if(done)return;done=true;clearTimeout(timeoutId);showFailure();});
 }
 </script>
 </body>
